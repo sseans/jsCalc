@@ -5,6 +5,8 @@
 
 .navBar {
     border: 1px solid red;
+    height: 75px;
+    background-color: slategrey;
 }
 
 h1 {
