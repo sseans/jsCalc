@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navBar {
+    border: 1px solid red;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid red;
+}
