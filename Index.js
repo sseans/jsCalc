@@ -28,3 +28,21 @@ for (let i = 0; i < 5; i++) {
     }
     
 }
+
+let headphones = {
+    color: 'black',
+    power: false,
+    charge: 100
+};
+
+if (headphones.power == true) {
+
+    for (let i = headphones.charge; i > 0; i--) {
+        console.log(i);
+        
+    }
+};
+
+
+
+
