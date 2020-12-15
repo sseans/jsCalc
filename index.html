@@ -1,16 +1,30 @@
-<html>
-    <head>
-        <title>Javascript Test</title>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="navBar">
-            <h1>Javascript</h1>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="Index.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="display">
+            00:00:00
+        </div>
+
+        <div class="buttons">
+            <button id="startStop" onclick="startStop()">start</button> 
+            <button class="reset" onclick="reset()">reset</button>
+        </div>
+
+    </div>
 
 
 
-        <script src="Index.js"></script>
-    </body>
+
+</body>
 </html>

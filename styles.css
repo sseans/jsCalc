@@ -1,15 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
+.container {
+    height: 300px;
+    width: 100%;
 }
 
-.navBar {
-    border: 1px solid red;
-    height: 75px;
-    background-color: slategrey;
-}
-
-h1 {
+#display {
+    width: 100%;
+    font-size: 72px;
     text-align: center;
-    border: 1px solid red;
+    margin: 0px auto;
+}
+
+.buttons {
+    text-align: center;
 }
