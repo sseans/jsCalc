@@ -28,7 +28,16 @@ body {
 }
 
 .buttonLayout {
+    padding: 7.5px;
     border: 2px slategrey solid;
     height: 400px;
     width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    height: 30px;
+    width: 50px;
 }
