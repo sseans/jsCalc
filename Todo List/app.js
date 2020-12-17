@@ -8,5 +8,6 @@ todoButton.addEventListener('click', addTodo)
 
 // Functions
 function addTodo(event) {
-    
+    // Prevents for from submitting (refreshes page every time submit is clicked)
+    event.preventDefault();
 }
