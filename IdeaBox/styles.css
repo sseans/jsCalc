@@ -71,6 +71,7 @@ li:not(:last-child) {
 .button:hover {
     background-color: #457b9d;
     transition: ease-in-out 300ms;
+    color: white;
 }
 
 h1 {
@@ -80,4 +81,6 @@ h1 {
 
 p {
     padding: 5px 25px 25px 25px;
+    color: #1d3557;
+
 }
