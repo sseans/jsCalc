@@ -6,9 +6,11 @@ logIn.addEventListener('click', logInInterface)
 
 // Functions
 function logInInterface() {
+    //Create opaque background div
     let element = document.createElement('div');
-    element.className = 'opacityScreen';
+    element.classList.add('opacityScreen');
     document.body.appendChild(element);
+    //Div styling
     element.style.width = '100%';
     element.style.height =  '100%';
     element.style.backgroundColor = "#1d3557";
