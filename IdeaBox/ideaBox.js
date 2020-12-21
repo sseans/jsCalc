@@ -6,18 +6,36 @@ logIn.addEventListener('click', logInInterface)
 
 // Functions
 function logInInterface() {
-    //Create opaque background div
-    let element = document.createElement('div');
-    element.classList.add('opacityScreen');
-    document.body.appendChild(element);
-    //Div styling
-    element.style.width = '100%';
-    element.style.height =  '100%';
-    element.style.backgroundColor = "#1d3557";
-    element.style.opacity = '50%';
-    element.style.position = 'fixed';
-    element.style.top = '0';
-    element.style.left = '0';
-    element.style.transition = 'ease-in-out 300ms';
+    //Create Opaque BG Div
+    const bg = document.createElement('div');
+    bg.classList.add('opacityScreen');
+    document.body.appendChild(bg);
+    //Create Login Card
+    const card = document.createElement('div');
+    card.classList.add('logInCard');
+    bg.appendChild(card);
+    //Create Login Profile Picture
+    const profilePic = document.createElement('div');
+    profilePic.classList.add('profilePic');
+    card.appendChild(profilePic)
+    //Create Login Fields & Welcome Text
+    const logInField = document.createElement('div');
+    logInField.classList.add('logInField');
+    card.appendChild(logInField);
+
+    const welcome = document.createElement('p');
+    welcome.innerText = 'Welcome Back! Sign in please!';
+    welcome.classList.add('welcome');
+    logInField.appendChild(welcome);
+    
+    const inputUser = document.createElement('input');
+    inputUser.classList.add('inputUser');
+    inputUser.placeholder = "Username";
+    logInField.appendChild(inputUser);
+    
+    const inputPassword = document.createElement('input');
+    inputPassword.classList.add('inputPassword');
+    inputPassword.placeholder = "Password";
+    logInField.appendChild(inputPassword);
 }
 
