@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: inherit;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+    width: 30em;
+    height: 30em;
+}
+
+.button {
+    width: 10em;
+    height: 3em;
+    border: 0px transparent;
+    border-radius: 3px;
+    background-color:darkslategray;
+    color: white;
+    
+}
+
+h1 {
+    padding: 10px;
+}
