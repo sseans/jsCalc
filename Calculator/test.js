@@ -85,6 +85,9 @@ buttonClear.addEventListener('click',   function() {
 plusMinus.addEventListener('click',   function() {
                                     switchPositiveNegativeState();
                                 } )
+equals.addEventListener('click',   function() {
+                                    calculateResult();
+                                } )
 
                                 
 // Functions
@@ -185,5 +188,15 @@ function switchPositiveNegativeState() {
         displayNumber = '-' + displayNumber
         inputField.textContent = displayNumber
     }
+}
+
+function calculateResult() {
+    calculationNumber = calculationNumber + ' ' + displayNumber
+    displayNumber = ''
+    inputField.textContent = ''
+    calculationField.textContent = calculationNumber
+    let result = eval(calculationNumber)
+    calculationNumber = calculationNumber + ' ' + '=' + ' ' + result
+    calculationField.textContent = calculationNumber
 }
 

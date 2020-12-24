@@ -12,6 +12,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* CALCULATOR BODY */
+
 .calculator {
     width: 300px;
     height: 500px;
@@ -44,12 +46,16 @@ body {
     font-size: 22px;
 }
 
+/* BUTTON STYLES AND VARIOUS STATES */
+
 .buttonLayout {
     height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+
+/* MAIN BUTTON PANEL */
 
 .button {
     width: 25%;
@@ -81,6 +87,8 @@ body {
     width: 50%;
 }
 
+/* EQUALS BUTTON */
+
 .buttonEquals {
     width: 25%;
     height: 75pxs;
@@ -106,6 +114,8 @@ body {
 .buttonEquals:focus {
     outline: 0;
 }
+
+/* BUTTONS ON RIGHT SIDE (+ - * /) */
 
 .buttonRight {
     width: 25%;
