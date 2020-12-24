@@ -79,6 +79,9 @@ multiply.addEventListener('click',   function() {
 divide.addEventListener('click',   function() {
                                     division();
                                 } )
+buttonClear.addEventListener('click',   function() {
+                                    clearMemory();
+                                } )
 
                                 
 // Functions
@@ -156,5 +159,12 @@ function division() {
         inputField.textContent = ''
         displayNumber = ''
     }
+}
+
+function clearMemory() {
+    displayNumber = ''
+    calculationNumber = ''
+    inputField.textContent = ''
+    calculationField.textContent = ''
 }
 
