@@ -179,6 +179,7 @@ function clearMemory() {
     calculationField.textContent = ''
 }
 
+
 function switchPositiveNegativeState() {
     if (displayNumber.includes('-')) {
         const newDisplayNumber = displayNumber.slice(1)
