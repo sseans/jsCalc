@@ -1,3 +1,5 @@
+let displayNumber = '';
+
 // Selectors
     // Button Selectors
     const buttonClear = document.querySelector('#button1');
@@ -26,20 +28,28 @@
 
 // Event Listeners
 equals.addEventListener('click', calculateResult);
-one.addEventListener('click', addToDisplay(1));
-two.addEventListener('click', addToDisplay(9));
+one.addEventListener('click',   function() {
+                                    addToDisplay('1');
+                                } );
+two.addEventListener('click',   function() {
+                                    addToDisplay('2');
+                                } );
+                                
 // Functions
 
-
+// Adds numbers to displayNumber Variable as string so it concatenates
 function addToDisplay(number) {
-
-    
+    // Assign input element to 
     const inputField = document.getElementById('inputSpan');
-    inputField.textContent = number;
     
-    /*
-    document.getElementById('inputSpan').textContent = ' off';
-    */
+    if (displayNumber != '') {
+        displayNumber += number;
+        inputField.textContent = displayNumber;
+    } else { 
+        displayNumber = number;
+        inputField.textContent = number;
+    }
+
 }
 
 
