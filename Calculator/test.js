@@ -82,6 +82,9 @@ divide.addEventListener('click',   function() {
 buttonClear.addEventListener('click',   function() {
                                     clearMemory();
                                 } )
+plusMinus.addEventListener('click',   function() {
+                                    switchPositiveNegativeState();
+                                } )
 
                                 
 // Functions
@@ -120,16 +123,21 @@ function addition() {
 }
 
 function subtraction() {
-    if (calculationNumber == '') {
-        calculationNumber = displayNumber + ' ' + '-'
-        calculationField.textContent = calculationNumber
-        inputField.textContent = ''
-        displayNumber = ''
+    if (displayNumber == '') {
+        displayNumber = '-'
+        inputField.textContent = '-'
     } else {
-        calculationNumber = calculationNumber + ' ' + displayNumber + ' ' + '-'
-        calculationField.textContent = calculationNumber
-        inputField.textContent = ''
-        displayNumber = ''
+        if (calculationNumber == '') {
+            calculationNumber = displayNumber + ' ' + '-'
+            calculationField.textContent = calculationNumber
+            inputField.textContent = ''
+            displayNumber = ''
+        } else {
+            calculationNumber = calculationNumber + ' ' + displayNumber + ' ' + '-'
+            calculationField.textContent = calculationNumber
+            inputField.textContent = ''
+            displayNumber = ''
+        }
     }
 }
 
@@ -166,5 +174,16 @@ function clearMemory() {
     calculationNumber = ''
     inputField.textContent = ''
     calculationField.textContent = ''
+}
+
+function switchPositiveNegativeState() {
+    if (displayNumber.includes('-')) {
+        const newDisplayNumber = displayNumber.slice(1)
+        displayNumber = newDisplayNumber
+        inputField.textContent = displayNumber
+    } else {
+        displayNumber = '-' + displayNumber
+        inputField.textContent = displayNumber
+    }
 }
 

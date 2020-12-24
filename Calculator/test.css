@@ -77,6 +77,10 @@ body {
     outline: 0;
 }
 
+#button1 {
+    width: 50%;
+}
+
 .buttonEquals {
     width: 25%;
     height: 75pxs;
