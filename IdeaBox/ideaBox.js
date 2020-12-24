@@ -6,12 +6,11 @@ logIn.addEventListener('click', logInInterface)
 
 // Functions
 function logInInterface() {
-    
     //Create Opaque BG Div
     const bg = document.createElement('div');
     bg.classList.add('opacityScreen');
     document.body.appendChild(bg);
-
+    
     //Create Login Card & Profile Picture
     const card = document.createElement('div');
     card.classList.add('logInCard');

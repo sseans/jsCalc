@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="test.css">
-    <script src="test.js"></script>
+    <script src="test.js" defer></script>
 </head>
 <body>
     
     <div class="calculator">
         <div class="display">
-
-
+            <div class="calculation">
+                <span class="calculationSpan">7675 + 5543 - </span>
+            </div>
+            
+            <div class="inputField">
+                <span id="inputSpan">98765</span>
+            </div>
         </div>
 
         <div class="buttonLayout">
-            <button  class="button" id="button1" onclick="colourChange('blue')">Blue</button>
-            <button  class="button" id="button2" onclick="colourChange('red')">Red</button>
-            <button  class="button" id="button3" onclick="colourChange('orange')">Orange</button>
-            <button  class="button" id="button4" onclick="colourChange('teal')">Teal</button>
+            <button id="button1" class="button">C</button>
+            <button id="button2" class="button">+/-</button>
+            <button id="button3" class="button">%</button>
+            <button id="button4" class="buttonRight">÷</button>
+            
+            <button id="button5" class="button">7</button>
+            <button id="button6" class="button">8</button>
+            <button id="button7" class="button">9</button>
+            <button id="button8" class="buttonRight">X</button>
 
+            <button id="button9" class="button">4</button>
+            <button id="button10" class="button">5</button>
+            <button id="button11" class="button">6</button>
+            <button id="button12" class="buttonRight">-</button>
 
-
+            <button id="button13" class="button">1</button>
+            <button id="button14" class="button">2</button>
+            <button id="button15" class="button">3</button>
+            <button id="button16" class="buttonRight">+</button>
+            
+            <button id="button17" class="button">0</button>
+            <button id="button18" class="button">.</button>
+            <button id="button19" class="button">del</button>
+            <button id="button20" class="buttonEquals">=</button>
         </div>
 
     </div>
