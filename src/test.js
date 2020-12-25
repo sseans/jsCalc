@@ -199,5 +199,6 @@ function calculateResult() {
     let result = eval(calculationNumber)
     calculationNumber = calculationNumber + ' ' + '=' + ' ' + result
     calculationField.textContent = calculationNumber
+    
 }
 
